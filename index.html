@@ -8,23 +8,41 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
         integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
         crossorigin="anonymous" />
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <title>CSS Positioning</title>
 </head>
 
 <body>
-    <div class="center">
-        <h2>Login Form</h2>
+
+    <input type="checkbox" name="" id="show">
+    <label class="center view-btn" for="show">View Form</label>
+    <div class="center container">
         <form action="">
-            <input type="text" placeholder="Email">
-            <i class="far fa-envelope"></i>
-            <input type="password" placeholder="Password">
-            <i class="fas fa-lock"></i>
-
-            <button type="submit">Sign in</button>
-            <button>Forgot Password?</button>
-
+            <header>
+                <h1>Login Form</h1>
+                <label for="show" class="fas fa-times"></label>
+            </header>
+            
+            <div class="data">
+                <label for="">Email or Phone</label>
+                <input type="text">
+            </div>
+            <div class="data">
+                <label for="">Password</label>
+                <input type="password">
+            </div>
+            <a href="">Forgot Password?</a>
+            <div class="btn">
+                <div class="inner"></div>
+                <button class="button">Login</button>
+            </div>
+            
+            <footer>
+                <span>Not a member?</span>
+                <a href="">Signup now</a>
+            </footer>
         </form>
+
     </div>
 </body>
 

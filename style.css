@@ -1,84 +1,141 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Noto Sans TC', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
-    background: radial-gradient(#a429bc, #9225a7, #7f2092);
     height: 100vh;
-    overflow-y: hidden;
-    overflow-x: auto;
+    background: rgb(0, 228, 255);
+    background: linear-gradient(115deg, rgba(0, 228, 255, 1) 0%, rgba(113, 124, 234, 1) 33%, rgba(170, 72, 224, 1) 66%, rgba(236, 12, 212, 1) 100%);
 }
 
 .center {
-    width: 350px;
-    margin: 270px auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 3px;
+    
 }
 
-h2 {
-    padding: 20px;
-    color: white;
-    background-color: rgb(99, 8, 99);
-    border-radius: 5px 5px 0 0;
-}
-
-form {
+.container{
+    padding: 30px 20px;
     background-color: white;
-    padding: 30px;
-    position: relative;
-    border-radius: 0 0 5px 5px;
+    width: 300px;
+    display: none;
+}
+
+label.view-btn{
+    padding: 10px;
+    background-color: white;
+    cursor: pointer;
+    width: auto;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+label.fa-times{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+    transition-duration: .2s;
+    width: auto;
+}
+
+label.fa-times:hover{
+    color: rgba(236, 12, 212, 1);
+}
+
+.data {
+    margin-top: 10px;
+}
+
+label, input {
+    display: block;
+    width: 96%
 }
 
 input {
-    display: block;
-    width: 96%;
-    height: 25px;
-    margin-top: 10px;
-    padding: 1px 2%;
-    border: 1px solid rgb(167, 163, 163);
-    border-radius: 5px;
+    height: 30px;
+    border: 1px solid silver;
+    border-radius: 3px;
     outline: none;
-    font-size: 12px;
+    padding: 0 2%;
 }
 
-input[type="password"] {
+input[type='password']{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-button[type="submit"]:hover {
-    background-color: rgb(66, 4, 66);
-    transition-duration: .4s;
+#show{
+    display: none;
 }
 
-i.fa-envelope {
+#show:checked ~ .container{
+    display: block;
+}
+
+label {
+    font-size: 15px;
+    color: rgb(77, 77, 77);
+    margin-bottom: 2px;
+}
+
+.center a {
+    color: rgb(0, 207, 230);
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.center a:hover {
+    text-decoration: underline;
+}
+
+.btn {
+    margin: 20px 0;
+    height: 42px;
+    position: relative;
+    overflow: hidden;
+}
+
+.inner {
+    width: 300%;
+    height: 100%;
+    background: rgb(0, 228, 255);
+    background: linear-gradient(to right, rgba(0, 228, 255, 1) 0%, rgba(113, 124, 234, 1) 33%, rgba(170, 72, 224, 1) 66%, rgba(236, 12, 212, 1) 100%);
     position: absolute;
-    top: 47px;
-    right: 40px;
+    left: -100%;
+    z-index: -1;
+    transition-duration: .5s;
 }
 
-i.fa-lock {
-    position: absolute;
-    top: 87px;
-    right: 40px;
+.btn:hover .inner {
+    left: 0;
 }
 
-button {
-    margin-top: 20px;
+.button {
+    width: 100%;
+    height: 100%;
+    color: black;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background: none;
     border-style: none;
-    border-radius: 3px;
     outline: none;
     cursor: pointer;
 }
 
-form button:nth-of-type(1) {
-    background-color: rgb(99, 8, 99);
-    color: white;
-    padding: 5px 25px;
+footer {
+    text-align: center;
+    font-size: 13px;
 }
 
-form button:nth-of-type(2) {
-    background-color: white;
-    color: rgb(99, 8, 99);
-    margin-left: 10px;
+footer * {
+    margin: 0 1px;
 }
