@@ -4,33 +4,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
-        integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
-        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+    crossorigin="anonymous" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <title>CSS Positioning</title>
 </head>
 
 <body>
-    <header>
-        <nav>
-            <li><a href="">home</a></li>
-            <li><a href="">bedroom</a></li>
-            <li><a href="">dining</a></li>
-            <li><a href="">kitchen</a></li>
-            <li><a href="">backyard</a></li>
-        </nav>
-        <img src="images/unity logo.png" alt="">
-    </header>
-    <div class="container">
-        <h1>design your house</h1>
-        <p>Subscribe Easy Tutorials YouTube Channel to watch more bideos,
-            <br>press the bell icon to get latest updates.
-        </p>
-        <div class="buttons">
-            <button>watch more <span></span></button>
-            <button>subscribe <span></span></button>
+    <div class="card-container">
+        <div class="image-container">
+            <h2>Jane Doe</h2>
+        </div>
+        <div class="main-container">
+            <div class="info-container">
+                <div>
+                    <i class="fas fa-briefcase"></i>
+                    <span>Easy Tutorials</span>
+                </div>
+                <div>
+                    <i class="fas fa-home"></i>
+                    <span>Bangalore, IN</span>
+                </div>
+                <div>
+                    <i class="fas fa-envelope"></i>
+                    <span>demo@mail.com</span>
+                </div>
+                <div>
+                    <i class='fas fa-phone'></i>
+                    <span>0123456789</span>
+                </div>
+            </div>
+            <hr>
+            <div class="skills-container">
+                <div>
+                    <i class="fas fa-asterisk"></i>
+                    <span><b>skills</b></span>
+                </div>
+                <p>Adobe Photoshop</p>
+                <div class="skill-bar">
+                    <div class="progress-bar" style="width: 80%;">80%</div>
+                </div>
+                <p>UI Design</p>
+                <div class="skill-bar">
+                    <div class="progress-bar" style="width: 85%;">85%</div>
+                </div>
+                <p>WordPress</p>
+                <div class="skill-bar">
+                    <div class="progress-bar" style="width: 75%;">75%</div>
+                </div>
+                <p>Graphic Design</p>
+                <div class="skill-bar">
+                    <div class="progress-bar" style="width: 50%;">50%</div>
+                </div>
+            </div>
         </div>
     </div>
 </body>

@@ -4,116 +4,81 @@
   font-family: 'Poppins', sans-serif;
 }
 
-body {
-  height: 100vh;
-  overflow: hidden;
-  background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('images/living room.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
+body{
+  background-color: #ecf0f1;
+  color: #1e272e;
 }
 
-header{
-  margin: 25px 60px;
-}
-
-img {
-  width: 100px;
-}
-
-li{
-  list-style: none;
-  margin-left: 30px;
-  display: inline-block;
-  
-}
-
-li:after{
-  content: '';
-  display: block;
-  width: 0;
-  height: 3px;
-  background-color: #047573;
-  transition-duration: .5s;
-}
-
-li:hover::after{
-  width: 100%;
-}
-
-li a{
-  color: white;
-  text-decoration: none;
-  text-transform: uppercase;
-
-}
-
-nav{
-  float: right;
-}
-
-.container *{
-  color: white;
-}
-
-.container{
+.card-container{
+  width: 400px;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%,-50%);
+  background-color: white;
+  box-shadow: 5px 5px 30px;
+  border-radius: 20px;
+  
+}
+
+.image-container{
+  background: url('images/emotion.jpg') no-repeat;
+  background-size: cover;
+  height: 250px;
+  position: relative;
+  border-radius: 20px 20px 0 0;
+}
+
+.image-container h2{
+  position: absolute;
+  left: 10px;
+  bottom: 15px;
+}
+
+.main-container{
+  margin: 30px 20px 10px;
+}
+
+.info-container i{
+  color: #3c40c6;
+}
+
+.info-container span{
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.info-container div{
+  margin: 5px 0;
+}
+
+hr{
+  margin: 10px 0;
+}
+
+.skills-container i{
+  color: #3c40c6;
+}
+
+
+.skills-container span{
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.skills-container p{
+  margin: 10px 0;
+}
+
+.skill-bar{
+  background-color: rgba(60, 64, 198,0.2);
+  border-radius: 20px;
+}
+
+.progress-bar{
+  background-color: #3c40c6;
+  border-radius: 20px;
+  color: white;
   text-align: center;
 }
 
-.container h1, .container button{
-  text-transform: uppercase;
-}
-
-h1{
-  font-size: 70px;
-}
-
-p{
-  margin: 10px 0 30px;
-}
-
-p, button{
-  font-size: 17px;
-}
-
-.container button{
-  margin-left: 20px;
-}
-
-button{
-  background: none;
-  border: 1px solid #047573;
-  border-radius: 20px;
-  padding: 5px 10px;
-  width: 150px;
-  cursor: pointer;
-  position: relative;
-
-}
-
-button:focus{
-  outline: none;
-}
-
-button:hover{
-  border: none;
-}
-
-button span{
-  width: 0;
-  height: 100%;
-  background-color: #047573;
-  position: absolute;
-  top: 0;
-  left: 0;
-  border-radius: 20px;
-  z-index: -1;
-  transition-duration: .5s;
-}
-
-button:hover span{
-  width: 100%;
-}
