@@ -6,79 +6,78 @@
 
 body{
   background-color: #ecf0f1;
-  color: #1e272e;
 }
 
-.card-container{
+.card-container {
   width: 400px;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
-  background-color: white;
-  box-shadow: 5px 5px 30px;
+  transform: translate(-50%, -50%);
+  text-align: center;
   border-radius: 20px;
-  
+  box-shadow: 5px 5px 30px;
 }
 
-.image-container{
-  background: url('images/emotion.jpg') no-repeat;
-  background-size: cover;
-  height: 250px;
-  position: relative;
+.upper-container {
+  height: 210px;
+  background-color: #7158e2;
   border-radius: 20px 20px 0 0;
 }
 
-.image-container h2{
+.lower-container {
+  height: 70%;
+  background-color: white;
+  padding: 90px 30px 100px;
+  position: relative;
+  border-radius: 0 0 20px 20px;
+}
+
+.image-container{
   position: absolute;
-  left: 10px;
-  bottom: 15px;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  height: 150px;
+  width: 150px;
+  background-color: white;
+  border-radius: 50%;
 }
 
-.main-container{
-  margin: 30px 20px 10px;
+.image{
+  height: 92%;
+  width: 92%;
+  margin: 4%;
+  background: url('images/woman-smile.jpg') no-repeat;
+  background-size: cover;
+  border-radius: 50%;
 }
 
-.info-container i{
-  color: #3c40c6;
+.lower-container p:nth-of-type(1){
+  font-size: 27px;
 }
 
-.info-container span{
-  display: inline-block;
-  margin-left: 10px;
+.lower-container p:nth-of-type(2){
+  font-size: 20px;
 }
 
-.info-container div{
-  margin: 5px 0;
+.lower-container p:nth-of-type(3){
+  margin: 20px 0 30px;
+  text-transform: capitalize;
 }
 
-hr{
-  margin: 10px 0;
-}
-
-.skills-container i{
-  color: #3c40c6;
-}
-
-
-.skills-container span{
-  display: inline-block;
-  margin-left: 10px;
-}
-
-.skills-container p{
-  margin: 10px 0;
-}
-
-.skill-bar{
-  background-color: rgba(60, 64, 198,0.2);
-  border-radius: 20px;
-}
-
-.progress-bar{
-  background-color: #3c40c6;
-  border-radius: 20px;
+.lower-container a{
+  text-decoration: none;
+  padding: 10px 20px;
+  background-color: #7158e2;
   color: white;
-  text-align: center;
+  border-radius: 20px;
+  transition-duration: .5s;
 }
 
+.lower-container a:hover{
+  background: none;
+  color: #7158e2;
+  border: 1px solid #7158e2;
+
+}
