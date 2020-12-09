@@ -10,6 +10,7 @@ body {
 
 nav {
   display: flex;
+  flex-wrap: wrap;
   background-color: black;
   padding: 10px;
   padding-right: 0;
@@ -108,4 +109,16 @@ li a {
   color: white;
   background-color: #d35400;
   text-decoration: none;
+}
+
+@media screen and (max-width: 400px){
+  
+  nav{
+    display: block;
+    text-align: center;
+  }
+  
+  nav ul{
+    display: block;
+  }
 }
