@@ -4,121 +4,169 @@
   font-family: 'Poppins', sans-serif;
 }
 
-body {
-  /* background-color: #ecf0f1; */
+.wrapper {
+  background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('images/mountain.jpg') no-repeat center;
+  background-size: cover;
+  display: flow-root;
+  height: 1000px;
 }
 
-nav {
+header {
   display: flex;
   flex-wrap: wrap;
-  background-color: black;
-  padding: 10px;
-  padding-right: 0;
+  padding: 2% 3% 0;
+  height: 5%;
 }
 
-nav div {
-  flex: 1;
-  font-size: 35px;
+header h3 {
+  flex: 2;
+  text-transform: uppercase;
   color: white;
 }
 
-nav ul {
+header nav {
   flex: 1;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: space-between;
 }
 
-ul li {
+@media screen and (max-width: 1000px){
+  header{
+    display: block;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 350px){
+  header nav{
+    display: flow-root
+  }
+
+  nav li{
+    margin-top: 5px;
+  }
+}
+
+nav li {
   list-style: none;
 }
 
 li a {
   text-decoration: none;
+  text-transform: capitalize;
   color: white;
-  font-size: 18px;
 }
 
 .banner {
-  background: url('images/desk.jpg') no-repeat;
-  background-size: cover;
-  height: 800px;
+  text-align: center;
+  height: 70%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: center;
 }
 
-.banner>* {
-  width: 50%;
+.banner * {
   color: white;
+  margin-bottom: 20px;
 }
 
 .banner h1 {
-  font-size: 80px;
+  text-transform: uppercase;
+  font-size: 50px;
 }
 
-.main-content {
+.banner p {
+  text-transform: capitalize;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.banner .btn {
+  display: block;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: blueviolet;
+  padding: 10px 20px;
+  font-size: 12px;
+  border-radius: 20px;
+}
+
+.about h1, .services h1, .contacts h1 {
+  font-size: 40px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.about, .services, .contacts {
+  padding: 80px 20%;
+}
+
+.about-wrapper, .services-wrapper, .contacts-wrapper {
   display: flex;
   flex-wrap: wrap;
-  width: 50%;
-  margin: 30px auto;
-  background-color: white;
-  text-align: center;
-  column-gap: 50px;
+  column-gap: 20px;
+  margin-top: 50px;
 }
 
-.main-content div {
-  flex: 1;
-}
-
-.contact-us {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/bridge.jpg') no-repeat;
+.about-img {
+  background: url('images/tree.jpg') no-repeat center;
   background-size: cover;
+  width: 300px;
+  height: 200px;
+}
+
+.about-text {
+  flex: 1;
+  text-align: left;
+}
+
+.about-text h3 {
+  font-size: 27px;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+.services{
+  background: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.8)), url('images/tree.jpg') no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+}
+
+.services-wrapper{
+  min-height: 300px;
+  align-items: center;
+}
+
+.service, .contact{
+  flex: 1;
+  text-align: center;
+}
+
+.service i, .contact i{
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.service h6{
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.contact i{
+  color: blueviolet;
+}
+
+footer{
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: center;
-  height: 500px;
+  background-color: black;
+  height: 150px;
 }
 
-.contact-us>* {
-  width: 30%;
-  margin: 5px 0;
-  padding: 10px;
-  border-radius: 10px;
-}
-
-.contact-us input, .contact-us textarea {
-  border: 1px solid black;
-}
-
-.contact-us>*:focus {
-  outline: none;
-}
-
-.contact-us h1 {
+footer p{
   color: white;
-  padding: 0;
-}
-
-.contact-us a {
-  width: 10%;
-  color: white;
-  background-color: #d35400;
-  text-decoration: none;
-}
-
-@media screen and (max-width: 400px){
-  
-  nav{
-    display: block;
-    text-align: center;
-  }
-  
-  nav ul{
-    display: block;
-  }
 }
