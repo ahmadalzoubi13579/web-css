@@ -95,7 +95,7 @@ a {
 }
 
 .banner h1 {
-  font-size: 60px;
+  font-size: calc(1.5rem + 3vw);
 }
 
 .banner span {
