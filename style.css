@@ -5,9 +5,29 @@
 }
 
 .wrapper {
-  background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('images/gym man.jpg') no-repeat center;
-  background-size: cover;
   height: 900px;
+}
+
+@media screen and (min-width: 769px){
+  .wrapper {
+    background: linear-gradient(rgba(0, 0, 0, .5),rgba(0, 0, 0, .5)),
+                url('images/responsive images/gym\ man\ large.jpg') center/cover;
+  }
+  
+}
+
+@media screen and (max-width: 768px){
+  .wrapper{
+    background: linear-gradient(rgba(0, 0, 0, .5),rgba(0, 0, 0, .5)),
+                url('images/responsive images/gym\ man\ medium.jpg') center/cover;
+  }
+}
+
+@media screen and (max-width: 425px){
+  .wrapper{
+    background: linear-gradient(rgba(0, 0, 0, .5),rgba(0, 0, 0, .5)),
+                url('images/responsive images/gym\ man\ small.jpg') center/cover;
+  }
 }
 
 header {
@@ -126,9 +146,9 @@ a {
 }
 
 .about-img {
-  background: url('images/gym woman.jpg') no-repeat center;
-  background-size: cover;
+  background: url('images/responsive images/gym\ woman\ small.jpg') center/cover;
   width: 350px;
+  min-width: 300px;
   height: 200px;
 }
 
