@@ -4,264 +4,166 @@
   font-family: 'Poppins', sans-serif;
 }
 
-.wrapper {
-  height: 100vh;
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #333;
+  color: white;
+  text-align: center;
 }
 
 header {
   display: flex;
-  padding: 2% 3% 0;
-}
-
-header h1 {
-  flex: 2;
-  color: #ecf0f1;
-}
-
-header span {
-  color: #ee680f;
-}
-
-nav {
-  flex: 1;
-  display: flex;
-  justify-content: space-between;
-}
-
-li {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-  text-transform: capitalize;
-  color: #ecf0f1;
-}
-
-.banner {
-  height: 70%;
-  display: flex;
-  flex-direction: column;
+  min-height: 50vh;
+  background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('images/grid/code-small.jpg') no-repeat center/cover;
+  padding: 40px;
   justify-content: center;
   align-items: center;
-  text-align: center;
 }
 
-.banner p, .banner h1 {
-  color: #ecf0f1;
-  text-transform: uppercase;
+.banner, .content-wrapper {
+  max-width: 790px;
 }
 
-.banner p {
-  font-size: 20px;
-}
-
-.banner h1 {
-  font-size: calc(1.5rem + 3vw);
-}
-
-.banner span {
-  color: #ee680f;
+.banner>* {
+  margin-top: 20px;
 }
 
 .banner a {
-  padding: 10px 30px;
-  background-color: #ee680f;
+  display: inline-block;
+  color: white;
+  background: #333;
+  border: 1px solid white;
+  text-decoration: none;
+  padding: 10px 15px;
+  transition-duration: .3s;
 }
 
-.about, .services, .contacts {
-  padding: 5% 20%;
-  color: #ecf0f1;
+.banner a:hover {
+  color: #333;
+  background: white;
+  border: 1px solid #333;
 }
 
-.about, .contacts {
-  background-color: #0B0A0C;
+.info, footer {
+  padding: 40px;
 }
 
-.about>h1, .services>h1, .contacts>h1 {
-  color: #ecf0f1;
-  text-transform: uppercase;
-  font-size: calc(1.5rem + 1.7vw);
-  text-align: center;
+.info {
+  color: #333;
+  background: white;
 }
 
-.about span, .services span, .contacts span {
-  color: #ee680f;
+.content-wrapper{
+  margin: 0 auto;
 }
 
-.about-wrapper, .services-wrapper, .contacts-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 7%;
+.info p {
+  margin-top: 20px;
 }
 
-.services-wrapper, .contacts-wrapper {
-  column-gap: 50px;
-  row-gap: 20px;
-  text-align: center;
+#services {
+  display: flow-root;
+  max-width: 1100px;
 }
 
-.about-wrapper {
-  column-gap: 40px;
-  row-gap: 20px;
-  justify-content: center;
-}
-
-.about-img {
-  width: 350px;
-  height: 200px;
-  min-width: 300px;
-}
-
-.about-text {
-  flex: 1;
-  color: #ecf0f1;
-  text-align: left;
-  min-width: 300px;
-}
-
-.about-text h1 {
-  text-transform: capitalize;
-  font-size: 25px;
-}
-
-.about-text p {
-  font-size: 14px;
-}
-
-.services {
-  background-color: #161516;
-}
-
-.service, .contact {
-  flex: 1;
-  min-width: 200px;
+.service {
+  margin: 30px 15px;
+  background: white;
+  color: #333;
 }
 
 .service img {
-  width: 70px;
-  margin-bottom: 10%;
+  width: 100%;
+  display: block;
 }
 
-.service p:first-of-type {
-  text-transform: uppercase;
-  font-size: 20px;
-  margin-bottom: 10%;
+.service .content-wrapper {
+  padding: 40px;
+  padding-top: 0;
 }
 
-.services p:last-child {
-  font-size: 14px;
+.service .content-wrapper>* {
+  margin-top: 20px;
 }
 
-.contact i {
-  color: #ee680f;
-  font-size: 30px;
-  margin-bottom: 10%;
+.contact {
+  background: rgb(15, 122, 223);
 }
 
-.contact:first-child {
-  text-transform: capitalize;
+.contact, .about {
+  padding: 40px;
 }
 
-.contact p:first-of-type {
-  margin-bottom: 2.5%;
-}
-
-.contact p {
-  font-size: 14px;
+.contact p, .about p {
+  margin-top: 20px;
 }
 
 footer {
-  padding: 3%;
-  background-color: black;
+  background: black;
 }
 
-footer p {
-  color: #ecf0f1;
-  font-size: 14px;
-  text-align: center;
-  text-transform: capitalize;
+footer p:nth-child(2) {
+  margin-top: 10px;
 }
 
-/* Media Queries */
+footer a {
+  color: rgb(15, 122, 223);
+  text-decoration: none;
+}
 
-@media screen and (min-width: 1921px) {
-  .wrapper {
-    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('images/responsive images/gym\ man\ xlarge.jpg') center/cover;
+@media (min-width: 650px) {
+  header{
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('images/grid/code-medium.jpg') no-repeat center/cover;
   }
-  .banner a {
-    padding: 20px 60px;
+
+  #services {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+    margin: 0 auto;
+    padding: 30px 15px;
   }
-  .about-img {
-    background: url('images/responsive images/gym\ woman\ medium.jpg') center/cover;
-    width: 600px;
-    height: 340px;
-  }
-  .service img {
-    width: 150px;
-  }
-  .contact i {
-    font-size: 60px;
-  }
-  header h1, .banner p {
-    font-size: 48px;
-  }
-  nav a, .banner a {
-    font-size: 32px;
-  }
-  .about-text h1, .service p:first-of-type {
-    font-size: 45px;
-  }
-  .about-text p, .services p:last-child, .contact p, footer p{
-    font-size: 27px;
+  .service {
+    margin: 0;
+    grid-column: span 3;
   }
 }
 
-@media screen and (max-width: 1920px) {
-  .wrapper {
-    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('images/responsive images/gym\ man\ large.jpg') center/cover;
+@media (min-width: 1000px) {
+  header{
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('images/grid/code-large.jpg') no-repeat center/cover;
   }
-  .about-img {
-    background: url('images/responsive images/gym\ woman\ small.jpg') center/cover;
+
+  .service {
+    grid-column: span 2;
+  }
+  .info-3 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
-@media screen and (max-width: 768px) {
-  .wrapper {
-    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('images/responsive images/gym\ man\ medium.jpg') center/cover;
+@media (min-width: 2560px){
+  h1{
+    font-size: 4em;
   }
-  .banner a {
-    padding: 7px 21px;
-  }
-}
 
-@media screen and (max-width: 425px) {
-  .wrapper {
-    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('images/responsive images/gym\ man\ small.jpg') center/cover;
+  h3{
+    font-size: 34px;
   }
-  .banner a {
-    padding: 5px 15px;
-  }
-}
 
-@media screen and (max-width: 1149px) {
-  .about-text {
-    text-align: center;
+  p, .banner a{
+    font-size: 2em;
   }
-}
 
-@media screen and (max-width: 1000px) {
-  header {
-    display: block;
-    text-align: center;
+  .banner, .content-wrapper {
+    max-width: 1200px;
   }
-}
 
-@media screen and (max-width: 400px) {
-  nav {
-    display: flow-root;
-  }
-  li {
-    margin-top: 10px;
+  #services{
+    max-width: 1510px;
   }
 }
