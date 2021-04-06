@@ -187,8 +187,12 @@ li:first-of-type a {
   object-fit: cover;
 }
 
-.about-us h3 {
+.about-us-text h3 {
   margin: 10px 0;
+}
+
+.about-us-text p {
+  line-height: 25px;
 }
 
 .sidebar {
@@ -625,10 +629,6 @@ footer {
     font-family: Rabbit;
     font-size: 50px;
     letter-spacing: 5px;
-  }
-
-  .about-us-text {
-    line-height: 25px;
   }
 
   .sidebar {
